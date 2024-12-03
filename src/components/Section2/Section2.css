@@ -25,12 +25,6 @@
   margin-top: 2rem;
   max-width: 50rem;
 }
-.helpSection__icons div:first-child > p a, .helpSection__icons div:nth-child(2) > p a, .helpSection__icons div:nth-child(3) > p a {
-  text-decoration: none;
-}
-.helpSection__icons div:first-child > p a:hover, .helpSection__icons div:nth-child(2) > p a:hover, .helpSection__icons div:nth-child(3) > p a:hover {
-  text-decoration: underline;
-}
 .helpSection__icons > div {
   display: flex;
   flex-direction: column;
