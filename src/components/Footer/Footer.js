@@ -45,7 +45,7 @@ function Footer() {
                 <div className='footer__donate'>
                     <div>Donate to either or both of our organizations</div>
                     <div className='footer__donate--link'>
-                        <Links href='https://buy.stripe.com/8wMg205lFaJrbD26oB' text='To Toronto'/>
+                        <Links href='https://www.zeffy.com/donation-form/25-to-build-her-giving-tuesday' text='To Toronto'/>
                         <Links href='https://givebutter.com/25toBuildHER' text='To Fort Lauderdale'/>
                     </div>
                 </div>
