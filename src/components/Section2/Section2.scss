@@ -17,6 +17,7 @@
         font-size: 1rem;
         color: #3E1C66;
         margin: 0rem;
+        font-weight: 500;
     }
     &__icons {
         display: flex;
@@ -24,7 +25,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 2rem;
+        max-width: 50rem;
 
+        & div:first-child, div:nth-child(2), div:nth-child(3) {
+            & > p {
+                & a {
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
         & > div {
             display: flex;
             flex-direction: column;
@@ -35,14 +47,16 @@
                 width: 100%;
             }
             & > img {
-                width: 3rem;
+                width: 3.5rem;
             }
             & > div {
                 color: #3E1C66;
-                font-weight: bold;
+                font-weight: 800;
+                margin-top: 0.5rem;
             }
             & > p {
                 color: #3E1C66;
+                margin-top: 0.5rem;
                 & a {
                     color: #3E1C66;
                 }

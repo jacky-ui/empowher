@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   width: 100%;
   margin-top: 0%;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,8 @@
   position: absolute;
   right: 0%;
   bottom: 0%;
+  width: 90%;
+  max-width: 65rem;
 }
 @media screen and (max-width: 760px) {
   .header > img:last-child {
@@ -40,9 +42,10 @@
   }
 }
 .header__mainText {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Barlow Condensed", serif;
   color: #FFFFFF;
-  font-size: 5.5rem;
+  font-size: 4.5rem;
+  font-weight: 700;
   letter-spacing: 0.2rem;
   line-height: 100%;
   width: 50%;
@@ -55,7 +58,7 @@
 .header__paragraph {
   font-size: 1.5rem;
   color: #FFFFFF;
-  width: 70%;
+  width: 60%;
 }
 @media screen and (max-width: 760px) {
   .header__paragraph {

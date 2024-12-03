@@ -1,5 +1,5 @@
 .supportSection {
-  background-color: #F9F7F5;
+  background-color: #420D62;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -28,15 +28,13 @@
   }
 }
 .supportSection--line {
-  border: 1px solid black;
+  border: 1px solid #FFFFFF;
 }
 .supportSection__heading {
   font-size: 3rem;
   width: 80%;
   margin-bottom: 1rem;
-  background: -webkit-linear-gradient(#AC00F4, #1A0826);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #FFFFFF;
 }
 @media screen and (max-width: 760px) {
   .supportSection__heading {
@@ -46,7 +44,9 @@
 .supportSection__text {
   font-weight: bold;
   font-size: 1rem;
+  font-weight: 500;
   width: 80%;
+  color: #FFFFFF;
 }
 @media screen and (max-width: 760px) {
   .supportSection__text {

@@ -1,7 +1,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .rippleSection {
-    background-color: #EF6CEF;
+    background-color: #A621F6;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,9 @@
             display: flex;
             flex-direction: row;
             padding: 2rem 0rem;
+            @include tablet {
+                flex-wrap: wrap;
+            }
             @include mobile {
                 flex-direction: column;
                 align-items: center;
@@ -31,14 +34,15 @@
         width: 80%;
         margin-bottom: 1rem;
         color: #FFFFFF;
+        font-weight: 700;
         @include mobile {
             width: 100%;
         }
     }
     &__text {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 1rem;
-        width: 80%;
+        width: 69%;
         color: #FFFFFF;
         @include mobile {
             width: 100%;

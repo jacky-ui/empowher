@@ -1,5 +1,9 @@
 import present from '../../assets/images/present.png';
 import letter from '../../assets/images/letter.png';
+import donation from '../../assets/images/donation.png';
+import spreadWord from '../../assets/images/spread word.png';
+import volunteer from '../../assets/images/volunteer.png'
+import mentorship from '../../assets/images/mentorship.png';
 import StepIcons from '../StepIcons/StepIcons.js';
 import './Section2.scss';
 
@@ -9,28 +13,28 @@ function Section2() {
             <h2>Here's how you can help</h2>
             <p>Help us in inspiring and equiping young minority women and girls to become</p>
             <article className='helpSection__icons'>
-                <StepIcons src={present} alt='' header='Make a donation' 
+                <StepIcons src={donation} alt='' header='Make a donation' 
                 text={
                     <>
                         <a href="/assets/Programming.pdf" aria-label="Click here to signup for our newsletter" target="_blank" rel="noopener noreferrer">Your gift goes directly to empowering young women and girls through free programming.</a>
                     </>
                 }
                 />
-                <StepIcons src={letter} alt='' header='Spread the Word' 
+                <StepIcons src={spreadWord} alt='' header='Spread the Word' 
                     text={
                         <>
                             <a href="https://forms.monday.com/forms/5a88e7f55f2ed83466b7733e8cefa525?r=apse2" aria-label="Click here to signup for our newsletter">Share our mission with your friends, family, and network.</a>
                         </>
                     }
                 />
-                <StepIcons src={present} alt='' header='Volunteer or Partner' 
+                <StepIcons src={volunteer} alt='' header='Volunteer or Partner' 
                     text={
                         <>
                             <a href="https://forms.monday.com/forms/cbd05420e5d88509fc5426decf7d51a2?r=apse2" aria-label="Click here to volunteer">Get involved and make a lasting impact.</a>
                         </>
                     }
                 />
-                <StepIcons src={letter} alt='' header='Mentorship' 
+                <StepIcons src={mentorship} alt='' header='Mentorship' 
                     text={
                         <>
                             Consider becoming a mentor for women and girls in our community.{' '}

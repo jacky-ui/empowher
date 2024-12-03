@@ -9,7 +9,7 @@ function Section1() {
                 <div className='supportSection--line'></div>
                 <article>
                 <div>
-                    <h2 className='supportSection__heading'>Your Support Makes a Difference</h2>
+                    <h2 className='supportSection__heading'>YOUR SUPPORT<br /> MAKES A<br /> DIFFERENCE</h2>
                     <p className='supportSection__text'>Your generosity allows us to offer six core empowHERto programs — providing hands-on career mentorship, digital empowerment training, mental health coaching, financial literacy, and more, all free for young minority women and girls.</p>
                 </div>
                 <Image src={supportImage} alt=''/>

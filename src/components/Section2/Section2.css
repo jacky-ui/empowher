@@ -15,6 +15,7 @@
   font-size: 1rem;
   color: #3E1C66;
   margin: 0rem;
+  font-weight: 500;
 }
 .helpSection__icons {
   display: flex;
@@ -22,6 +23,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2rem;
+  max-width: 50rem;
+}
+.helpSection__icons div:first-child > p a, .helpSection__icons div:nth-child(2) > p a, .helpSection__icons div:nth-child(3) > p a {
+  text-decoration: none;
+}
+.helpSection__icons div:first-child > p a:hover, .helpSection__icons div:nth-child(2) > p a:hover, .helpSection__icons div:nth-child(3) > p a:hover {
+  text-decoration: underline;
 }
 .helpSection__icons > div {
   display: flex;
@@ -36,14 +44,16 @@
   }
 }
 .helpSection__icons > div > img {
-  width: 3rem;
+  width: 3.5rem;
 }
 .helpSection__icons > div > div {
   color: #3E1C66;
-  font-weight: bold;
+  font-weight: 800;
+  margin-top: 0.5rem;
 }
 .helpSection__icons > div > p {
   color: #3E1C66;
+  margin-top: 0.5rem;
 }
 .helpSection__icons > div > p a {
   color: #3E1C66;
