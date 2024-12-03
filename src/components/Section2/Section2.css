@@ -1,0 +1,47 @@
+.helpSection {
+  background-color: #EF6CEF;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.helpSection > h2 {
+  color: #3E1C66;
+  font-size: 3rem;
+  margin: 0;
+}
+.helpSection > p {
+  font-size: 1rem;
+  color: #3E1C66;
+  margin: 0rem;
+}
+.helpSection__icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.helpSection__icons > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+}
+@media screen and (max-width: 760px) {
+  .helpSection__icons > div {
+    width: 100%;
+  }
+}
+.helpSection__icons > div > img {
+  width: 3rem;
+}
+.helpSection__icons > div > div {
+  color: #3E1C66;
+  font-weight: bold;
+}
+.helpSection__icons > div > p {
+  color: #3E1C66;
+}/*# sourceMappingURL=Section2.css.map */

@@ -1,0 +1,58 @@
+.donateSection {
+  background-image: url("/assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.donateSection > div:first-child {
+  position: relative;
+  z-index: 1;
+}
+.donateSection > div:first-child > h2 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+.donateSection__links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+@media screen and (max-width: 760px) {
+  .donateSection__links {
+    flex-direction: column;
+  }
+}
+.donateSection__links a {
+  background-color: #EF6CEF;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  display: block;
+  width: 12rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+.donateSection__links a:hover {
+  cursor: pointer;
+}
+.donateSection > div:last-child > img {
+  position: absolute;
+  bottom: -14%;
+  right: 0%;
+  width: 19rem;
+}
+@media screen and (max-width: 760px) {
+  .donateSection > div:last-child > img {
+    width: 50%;
+  }
+}/*# sourceMappingURL=Section3.css.map */

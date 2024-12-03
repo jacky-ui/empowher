@@ -1,0 +1,84 @@
+@use '../../styles/partials/mixins' as *;
+
+.header {
+    background-image: url('/assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 0%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    & > div {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        & > img:first-child {
+            width: 15rem;
+            margin-bottom: 2rem;
+        }
+        & > img:nth-child(2) {
+            width: 11rem;
+            margin-bottom: 2rem;
+        }
+    }
+    & > img:last-child {
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    &__mainText {
+        font-family: "Bebas Neue", sans-serif;
+        color: #FFFFFF;
+        font-size: 5.5rem;
+        letter-spacing: 0.2rem;
+        line-height: 100%;
+        width: 50%;
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        width: 70%;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        @include mobile {
+            flex-direction: column;
+        }
+        & a {
+            background-color: #33105B;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            display: block;
+            width: 12rem;
+            font-weight: bold;
+            font-size: 1rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

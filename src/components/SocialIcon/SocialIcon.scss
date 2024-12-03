@@ -1,0 +1,11 @@
+@use '../../styles/partials/mixins' as *;
+
+.socialIcons {
+    display: flex;
+    gap: 0.5rem;
+    &__link {
+        & img {
+            
+        }
+    }
+}

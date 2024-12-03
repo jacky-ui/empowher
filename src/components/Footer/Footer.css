@@ -1,0 +1,140 @@
+.footer {
+  background-image: url("/assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 3rem;
+}
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  gap: 2rem;
+}
+@media screen and (max-width: 760px) {
+  .footer__contact {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer > img {
+    width: 100%;
+  }
+}
+.footer > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .footer > article {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer > article {
+    flex-direction: column;
+  }
+}
+.footer__aboutus {
+  color: #FFFFFF;
+}
+.footer__aboutus > h3 {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.footer__location {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 760px) {
+  .footer__location {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.footer__location h3 {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1rem;
+}
+.footer__location h3, .footer__location p, .footer__location a {
+  color: #FFFFFF;
+}
+.footer__location > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 760px) {
+  .footer__location > div {
+    flex-wrap: wrap;
+  }
+}
+.footer__donate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #FFFFFF;
+  width: 20%;
+}
+@media screen and (max-width: 760px) {
+  .footer__donate {
+    width: 100%;
+  }
+}
+.footer__donate--link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 760px) {
+  .footer__donate--link {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.footer__donate > div:first-child {
+  margin-top: 1rem;
+}
+.footer__donate a {
+  background-color: #EF6CEF;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  display: block;
+  width: 12rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+.footer__donate a:hover {
+  cursor: pointer;
+}
+
+.location {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 760px) {
+  .location {
+    flex-wrap: wrap;
+  }
+}
+.location > p {
+  margin: 0 0 0.5rem 0;
+  white-space: nowrap;
+}
+.location > a:nth-child(2) {
+  text-decoration: none;
+}/*# sourceMappingURL=Footer.css.map */

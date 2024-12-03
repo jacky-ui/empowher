@@ -1,0 +1,51 @@
+@use '../../styles/partials/mixins' as *;
+
+.supportSection {
+    background-color: #F9F7F5;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > div:first-child {
+        width: 80%;
+        & > article {
+            display: flex;
+            flex-direction: row;
+            padding: 2rem 0rem;
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+            & img {
+                width: 22rem;
+                @include mobile {
+                    width: 16rem;
+                }
+            }
+        }
+    }
+
+    &--line {
+        border: 1px solid black;
+    }
+    &__heading {
+        font-size: 3rem;
+        width: 80%;
+        margin-bottom: 1rem;
+        background: -webkit-linear-gradient(#AC00F4, #1A0826);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    &__text {
+        font-weight: bold;
+        font-size: 1rem;
+        width: 80%;
+        @include mobile {
+            width: 100%;
+        }
+    }
+}

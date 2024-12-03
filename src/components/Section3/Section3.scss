@@ -1,0 +1,59 @@
+@use '../../styles/partials/mixins' as *;
+
+.donateSection {
+    background-image: url('/assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    & > div:first-child {
+        position: relative;
+        z-index: 1;
+        & > h2 {
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        @include mobile {
+            flex-direction: column;
+        }
+        & a {
+            background-color: #EF6CEF;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            display: block;
+            width: 12rem;
+            font-weight: bold;
+            font-size: 1rem;
+            text-align: center;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    & > div:last-child {
+        & > img {
+            position: absolute;
+            bottom: -14%;
+            right: 0%;
+            width: 19rem;
+            @include mobile {
+                width: 50%;
+            }
+        }
+    }
+    
+}
