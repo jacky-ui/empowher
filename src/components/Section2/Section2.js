@@ -1,8 +1,7 @@
 import present from '../../assets/images/present.png';
 import letter from '../../assets/images/letter.png';
-import Image from '../Image/Image.js';
-import './Section2.scss';
 import StepIcons from '../StepIcons/StepIcons.js';
+import './Section2.scss';
 
 function Section2() {
     return(
@@ -10,7 +9,13 @@ function Section2() {
             <h2>Here's how you can help</h2>
             <p>Help us in inspiring and equiping young minority women and girls to become</p>
             <article className='helpSection__icons'>
-                <StepIcons src={present} alt='' header='Make a donation' text='Your gift goes directly to empowering young women and girls through free programming.'/>
+                <StepIcons src={present} alt='' header='Make a donation' 
+                text={
+                    <>
+                        <a href="/assets/Programming.pdf" aria-label="Click here to signup for our newsletter" target="_blank" rel="noopener noreferrer">Your gift goes directly to empowering young women and girls through free programming.</a>
+                    </>
+                }
+                />
                 <StepIcons src={letter} alt='' header='Spread the Word' 
                     text={
                         <>
