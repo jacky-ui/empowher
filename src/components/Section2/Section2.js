@@ -1,5 +1,3 @@
-import present from '../../assets/images/present.png';
-import letter from '../../assets/images/letter.png';
 import donation from '../../assets/images/donation.png';
 import spreadWord from '../../assets/images/spread word.png';
 import volunteer from '../../assets/images/volunteer.png'
