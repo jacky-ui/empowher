@@ -1,6 +1,6 @@
-function Links({ href, text }) {
+function Links({ href, text, aria }) {
     return(
-        <a href={href}>{text}</a>
+        <a href={href} aria-label={aria}>{text}</a>
     );
 };
 
