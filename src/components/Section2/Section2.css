@@ -6,6 +6,11 @@
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 760px) {
+  .helpSection {
+    padding: 3rem 2.5rem;
+  }
+}
 .helpSection > h2 {
   color: #3E1C66;
   font-size: 3rem;

@@ -12,11 +12,16 @@
 }
 @media screen and (max-width: 760px) {
   .supportSection {
-    padding: 2rem 1rem;
+    padding: 2rem 2.5rem;
   }
 }
 .supportSection > div:first-child {
   width: 70%;
+}
+@media screen and (max-width: 760px) {
+  .supportSection > div:first-child {
+    width: 100%;
+  }
 }
 .supportSection > div:first-child > article {
   display: flex;
@@ -34,6 +39,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem 0rem;
+    width: 100%;
   }
 }
 .supportSection > div:first-child > article img {

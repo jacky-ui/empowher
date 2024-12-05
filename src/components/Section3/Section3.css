@@ -13,7 +13,7 @@
 }
 @media screen and (max-width: 760px) {
   .donateSection {
-    padding: 3rem 3.5rem;
+    padding: 3rem 2.5rem;
   }
 }
 .donateSection > div:first-child {
