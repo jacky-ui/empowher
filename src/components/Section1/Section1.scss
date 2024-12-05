@@ -41,7 +41,7 @@
         border: 1px solid #FFFFFF;
     }
     &__heading {
-        font-size: 3rem;
+        @include secondary-header;
         width: 80%;
         margin-bottom: 1rem;
         color: #FFFFFF;

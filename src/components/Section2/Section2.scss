@@ -10,7 +10,7 @@
 
     & > h2 {
         color: #3E1C66;
-        font-size: 3rem;
+        @include secondary-header;
         margin: 0;
     }
     & > p {

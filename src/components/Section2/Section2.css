@@ -9,6 +9,8 @@
 .helpSection > h2 {
   color: #3E1C66;
   font-size: 3rem;
+  font-weight: 700;
+  line-height: 50px;
   margin: 0;
 }
 .helpSection > p {

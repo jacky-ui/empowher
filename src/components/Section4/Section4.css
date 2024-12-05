@@ -35,10 +35,11 @@
 }
 .rippleSection__heading {
   font-size: 3rem;
+  font-weight: 700;
+  line-height: 50px;
   width: 80%;
   margin-bottom: 1rem;
   color: #FFFFFF;
-  font-weight: 700;
 }
 @media screen and (max-width: 760px) {
   .rippleSection__heading {
