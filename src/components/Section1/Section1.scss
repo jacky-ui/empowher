@@ -21,6 +21,7 @@
         & > article {
             display: flex;
             flex-direction: row;
+            align-items: center;
             padding: 3rem 0rem;
             @include tablet {
                 flex-wrap: wrap;
@@ -49,15 +50,12 @@
         width: 80%;
         margin-bottom: 1rem;
         color: #FFFFFF;
+        margin-top: 0;
         // background: -webkit-linear-gradient(#AC00F4, #1A0826);
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
-        @include tablet {
-            margin-top: 0;
-        }
         @include mobile {
             width: 100%;
-            margin-top: 0;
         }
     }
     &__text {
