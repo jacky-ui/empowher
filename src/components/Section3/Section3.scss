@@ -1,11 +1,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .donateSection {
-    background-image: url('/assets/images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+    @include backgroundImage;
     padding: 3rem 6.5rem;
     display: flex;
     flex-direction: row;
