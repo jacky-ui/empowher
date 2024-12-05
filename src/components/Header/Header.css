@@ -36,18 +36,13 @@
   width: 90%;
   max-width: 65rem;
 }
-@media screen and (max-width: 760px) {
-  .header > img:last-child {
-    width: 100%;
-  }
-}
 .header__mainText {
   font-family: "Barlow Condensed", serif;
   color: #FFFFFF;
   font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  line-height: 100%;
+  line-height: 80px;
   width: 50%;
 }
 @media screen and (max-width: 760px) {
@@ -57,6 +52,8 @@
 }
 .header__paragraph {
   font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 30px;
   color: #FFFFFF;
   width: 60%;
 }
