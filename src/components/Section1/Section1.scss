@@ -6,16 +6,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet {
+        padding: 2rem 1rem;
+    }
     @include mobile {
         padding: 2rem 1rem;
     }
 
     & > div:first-child {
-        width: 80%;
+        width: 70%;
         & > article {
             display: flex;
             flex-direction: row;
             padding: 3rem 0rem;
+            @include tablet {
+                flex-wrap: wrap;
+                padding: 2rem 0rem;
+            }
             @include mobile {
                 flex-direction: column;
                 align-items: center;
@@ -41,6 +48,9 @@
         // background: -webkit-linear-gradient(#AC00F4, #1A0826);
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
+        @include tablet {
+            margin-top: 0;
+        }
         @include mobile {
             width: 100%;
             margin-top: 0;
