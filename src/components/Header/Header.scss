@@ -1,11 +1,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .header {
-    background-image: url('/assets/images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+    @include backgroundImage;
     margin-top: 0%;
     padding: 1.5rem 1.5rem 3rem 1.5rem;
     display: flex;
@@ -36,9 +32,6 @@
         bottom: 0%;
         width: 90%;
         max-width: 65rem;
-        @include mobile {
-            width: 100%;
-        }
     }
     &__mainText {
         font-family: "Barlow Condensed", serif;
@@ -46,7 +39,7 @@
         font-size: 4.5rem;
         font-weight: 700;
         letter-spacing: 0.2rem;
-        line-height: 100%;
+        line-height: 80px;
         width: 50%;
         @include mobile {
             width: 100%;
@@ -55,6 +48,8 @@
 
     &__paragraph {
         font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 30px;
         color: #FFFFFF;
         width: 60%;
         @include mobile {
@@ -71,17 +66,7 @@
         }
         & a {
             background-color: #33105B;
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 2rem;
-            display: block;
-            width: 12rem;
-            font-weight: bold;
-            font-size: 1rem;
-            &:hover {
-                cursor: pointer;
-            }
+            @include buttons;
         }
     }
 }

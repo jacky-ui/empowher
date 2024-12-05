@@ -1,26 +1,28 @@
 @use '../../styles/partials/mixins' as *;
 
 .donateSection {
-    background-image: url('/assets/images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding: 3rem;
+    @include backgroundImage;
+    padding: 3rem 6.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    @include mobile {
+        padding: 3rem 2.5rem;
+    }
     & > div:first-child {
         position: relative;
         z-index: 1;
         & > h2 {
             color: #FFFFFF;
-            font-size: 1.5rem;
             margin-top: 0;
+            @include secondary-header;
+            font-size: 2rem;
             margin-bottom: 3rem;
-            font-weight: 700;
+            @include mobile {
+                line-height: 35px;
+            }
         }
     }
     &__links {
@@ -32,28 +34,18 @@
         }
         & a {
             background-color: #EF6CEF;
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 2rem;
-            display: block;
-            width: 12rem;
-            font-weight: bold;
-            font-size: 1rem;
             text-align: center;
-            &:hover {
-                cursor: pointer;
-            }
+            @include buttons;
         }
     }
     & > div:last-child {
         & > img {
             position: absolute;
-            bottom: -14%;
+            bottom: 0%;
             right: 0%;
             width: 26rem;
             @include mobile {
-                width: 50%;
+                width: 69%;
             }
         }
     }

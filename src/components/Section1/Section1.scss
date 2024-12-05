@@ -2,20 +2,36 @@
 
 .supportSection {
     background-color: #420D62;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet {
+        padding: 2rem 1rem;
+    }
+    @include mobile {
+        padding: 2rem 2.5rem;
+    }
 
     & > div:first-child {
-        width: 80%;
+        width: 70%;
+        @include mobile {
+            width: 100%;
+        }
         & > article {
             display: flex;
             flex-direction: row;
-            padding: 2rem 0rem;
+            align-items: center;
+            padding: 3rem 0rem;
+            @include tablet {
+                flex-wrap: wrap;
+                padding: 2rem 0rem;
+            }
             @include mobile {
                 flex-direction: column;
                 align-items: center;
+                padding: 2rem 0rem;
+                width: 100%;
             }
             & img {
                 width: 22rem;
@@ -30,10 +46,11 @@
         border: 1px solid #FFFFFF;
     }
     &__heading {
-        font-size: 3rem;
+        @include secondary-header;
         width: 80%;
         margin-bottom: 1rem;
         color: #FFFFFF;
+        margin-top: 0;
         // background: -webkit-linear-gradient(#AC00F4, #1A0826);
         // -webkit-background-clip: text;
         // -webkit-text-fill-color: transparent;
@@ -42,9 +59,7 @@
         }
     }
     &__text {
-        font-weight: bold;
-        font-size: 1rem;
-        font-weight: 500;
+        @include body-text;
         width: 80%;
         color: #FFFFFF;
         @include mobile {

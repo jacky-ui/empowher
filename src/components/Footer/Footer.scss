@@ -6,15 +6,21 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 6.5rem;
+    @include mobile {
+        padding: 3rem 2.5rem;
+    }
     &__contact {
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        gap: 2rem;
+        width: 100%;
+        gap: 3rem;
+        @include desktop {
+            width: 72%;
+        }
         @include mobile {
-            width: 100%;
             flex-wrap: wrap;
+            gap: unset;
         }
     }
     & > img {
@@ -44,7 +50,7 @@
             margin-bottom: 0.5rem;
         }
         & > p {
-            font-weight: 500;
+            @include body-text;
         }
     }
     &__location {
@@ -61,6 +67,9 @@
             font-family: "Afacad Flux", sans-serif;
             font-size: 1rem;
             font-weight: 800;
+        }
+        & a {
+            line-height: 18px;
         }
         & h3, p, a {
             color: #FFFFFF;
@@ -95,21 +104,15 @@
         & > div:first-child {
             margin-top: 1rem;
             font-weight: 700;
+            line-height: 18px;
         }
         & a {
             background-color: #EF6CEF;
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 2rem;
-            display: block;
-            width: 12rem;
-            font-weight: bold;
-            font-size: 1rem;
             text-align: center;
-            &:hover {
-                cursor: pointer;
-            }
+            @include buttons;
+            font-size: 0.8rem;
+            width: 9rem;
+            line-height: 6px;
         }
     }
 }
@@ -123,11 +126,16 @@
     @include mobile {
         flex-wrap: wrap;
     }
+    & > div:first-child {
+        line-height: 18px;
+    }
     & > p {
         margin: 0 0 1rem 0;
         white-space: nowrap;
+        line-height: 18px;
     }
     & > a:nth-child(2) {
         text-decoration: none;
+        line-height: 18px;
     }
 }
