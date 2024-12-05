@@ -7,6 +7,14 @@
     font-weight: 700;
     line-height: 50px;
 }
+@mixin buttons {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 // variables for breakpoints
 $mobile-breakpoint: 760px;
