@@ -6,12 +6,15 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 6.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    @include mobile {
+        padding: 3rem 3.5rem;
+    }
     & > div:first-child {
         position: relative;
         z-index: 1;
@@ -21,6 +24,9 @@
             @include secondary-header;
             font-size: 2rem;
             margin-bottom: 3rem;
+            @include mobile {
+                line-height: 35px;
+            }
         }
     }
     &__links {
@@ -39,11 +45,11 @@
     & > div:last-child {
         & > img {
             position: absolute;
-            bottom: -14%;
+            bottom: 0%;
             right: 0%;
             width: 26rem;
             @include mobile {
-                width: 50%;
+                width: 69%;
             }
         }
     }

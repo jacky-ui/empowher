@@ -4,12 +4,17 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 6.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+}
+@media screen and (max-width: 760px) {
+  .donateSection {
+    padding: 3rem 3.5rem;
+  }
 }
 .donateSection > div:first-child {
   position: relative;
@@ -23,6 +28,11 @@
   line-height: 50px;
   font-size: 2rem;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 760px) {
+  .donateSection > div:first-child > h2 {
+    line-height: 35px;
+  }
 }
 .donateSection__links {
   display: flex;
@@ -51,12 +61,12 @@
 }
 .donateSection > div:last-child > img {
   position: absolute;
-  bottom: -14%;
+  bottom: 0%;
   right: 0%;
   width: 26rem;
 }
 @media screen and (max-width: 760px) {
   .donateSection > div:last-child > img {
-    width: 50%;
+    width: 69%;
   }
 }/*# sourceMappingURL=Section3.css.map */
