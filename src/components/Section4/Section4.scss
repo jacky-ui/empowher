@@ -8,10 +8,11 @@
     align-items: center;
 
     & > div:first-child {
-        width: 80%;
+        width: 70%;
         & > article {
             display: flex;
             flex-direction: row;
+            align-items: center;
             padding: 2rem 0rem;
             @include tablet {
                 flex-wrap: wrap;
@@ -19,10 +20,10 @@
             @include mobile {
                 flex-direction: column;
                 align-items: center;
+                padding-top: 0rem;
             }
             & img {
-                width: 22rem;
-                border-radius: 1rem;
+                width: 23rem;
                 @include mobile {
                     width: 16rem;
                 }
@@ -33,6 +34,7 @@
         @include secondary-header;
         width: 80%;
         margin-bottom: 1rem;
+        margin-top: 0;
         color: #FFFFFF;
         @include mobile {
             width: 100%;
