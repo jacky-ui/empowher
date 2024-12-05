@@ -32,18 +32,8 @@
         }
         & a {
             background-color: #EF6CEF;
-            color: #FFFFFF;
-            text-decoration: none;
-            padding: 0.5rem;
-            border-radius: 2rem;
-            display: block;
-            width: 12rem;
-            font-weight: bold;
-            font-size: 1rem;
             text-align: center;
-            &:hover {
-                cursor: pointer;
-            }
+            @include buttons;
         }
     }
     & > div:last-child {

@@ -36,15 +36,15 @@
 }
 .donateSection__links a {
   background-color: #EF6CEF;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 2rem;
-  display: block;
-  width: 12rem;
-  font-weight: bold;
-  font-size: 1rem;
   text-align: center;
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 12rem;
 }
 .donateSection__links a:hover {
   cursor: pointer;
