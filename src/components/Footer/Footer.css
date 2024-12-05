@@ -4,18 +4,28 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 6.5rem;
+}
+@media screen and (max-width: 760px) {
+  .footer {
+    padding: 3rem 3.5rem;
+  }
 }
 .footer__contact {
   display: flex;
   justify-content: space-between;
-  width: 70%;
-  gap: 2rem;
+  width: 100%;
+  gap: 3rem;
+}
+@media screen and (min-width: 1025px) {
+  .footer__contact {
+    width: 72%;
+  }
 }
 @media screen and (max-width: 760px) {
   .footer__contact {
-    width: 100%;
     flex-wrap: wrap;
+    gap: unset;
   }
 }
 @media screen and (max-width: 760px) {

@@ -6,15 +6,21 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 6.5rem;
+    @include mobile {
+        padding: 3rem 3.5rem;
+    }
     &__contact {
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        gap: 2rem;
+        width: 100%;
+        gap: 3rem;
+        @include desktop {
+            width: 72%;
+        }
         @include mobile {
-            width: 100%;
             flex-wrap: wrap;
+            gap: unset;
         }
     }
     & > img {
