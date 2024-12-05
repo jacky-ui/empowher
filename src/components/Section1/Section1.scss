@@ -57,9 +57,7 @@
         }
     }
     &__text {
-        font-weight: bold;
-        font-size: 1rem;
-        font-weight: 500;
+        @include body-text;
         width: 80%;
         color: #FFFFFF;
         @include mobile {

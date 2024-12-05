@@ -12,10 +12,10 @@
   margin: 0;
 }
 .helpSection > p {
+  font-weight: 500;
   font-size: 1rem;
   color: #3E1C66;
   margin: 0rem;
-  font-weight: 500;
 }
 .helpSection__icons {
   display: flex;
@@ -23,7 +23,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2rem;
-  max-width: 50rem;
+  width: 72%;
+  max-width: 64rem;
 }
 .helpSection__icons > div {
   display: flex;
@@ -48,6 +49,8 @@
 .helpSection__icons > div > p {
   color: #3E1C66;
   margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 .helpSection__icons > div > p a {
   color: #3E1C66;

@@ -1,3 +1,8 @@
+@mixin body-text {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 // variables for breakpoints
 $mobile-breakpoint: 760px;
 $tablet-breakpointmax: 1024px;

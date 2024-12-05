@@ -40,8 +40,7 @@
         }
     }
     &__text {
-        font-weight: 500;
-        font-size: 1rem;
+        @include body-text;
         width: 69%;
         color: #FFFFFF;
         @include mobile {
