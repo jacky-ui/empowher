@@ -1,6 +1,7 @@
 @mixin body-text {
     font-weight: 500;
     font-size: 1rem;
+    line-height: 18px;
 }
 @mixin secondary-header {
     font-size: 3rem;

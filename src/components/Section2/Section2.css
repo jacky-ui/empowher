@@ -16,6 +16,7 @@
 .helpSection > p {
   font-weight: 500;
   font-size: 1rem;
+  line-height: 18px;
   color: #3E1C66;
   margin: 0rem;
 }
@@ -53,6 +54,7 @@
   margin-top: 0.5rem;
   font-weight: 500;
   font-size: 1rem;
+  line-height: 18px;
 }
 .helpSection__icons > div > p a {
   color: #3E1C66;

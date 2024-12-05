@@ -51,6 +51,8 @@
 }
 .footer__aboutus > p {
   font-weight: 500;
+  font-size: 1rem;
+  line-height: 18px;
 }
 .footer__location {
   font-family: "Afacad Flux", sans-serif;
@@ -69,6 +71,9 @@
   font-family: "Afacad Flux", sans-serif;
   font-size: 1rem;
   font-weight: 800;
+}
+.footer__location a {
+  line-height: 18px;
 }
 .footer__location h3, .footer__location p, .footer__location a {
   color: #FFFFFF;
@@ -109,6 +114,7 @@
 .footer__donate > div:first-child {
   margin-top: 1rem;
   font-weight: 700;
+  line-height: 18px;
 }
 .footer__donate a {
   background-color: #EF6CEF;
@@ -140,10 +146,15 @@
     flex-wrap: wrap;
   }
 }
+.location > div:first-child {
+  line-height: 18px;
+}
 .location > p {
   margin: 0 0 1rem 0;
   white-space: nowrap;
+  line-height: 18px;
 }
 .location > a:nth-child(2) {
   text-decoration: none;
+  line-height: 18px;
 }/*# sourceMappingURL=Footer.css.map */
