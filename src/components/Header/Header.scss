@@ -52,6 +52,7 @@
         color: #FFFFFF;
         @include mobile {
             width: 90%;
+            font-size: 1.6rem;
         }
     }
     &__links {
@@ -67,11 +68,5 @@
             background-color: #33105B;
             @include buttons;
         }
-    }
-}
-
-br {
-    @include mobile {
-        display: none;
     }
 }

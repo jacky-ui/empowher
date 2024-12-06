@@ -13,4 +13,10 @@ h1, h2, h3, h4, h5 {
 
 .main > img:first-child {
   width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  br {
+    display: none;
+  }
 }/*# sourceMappingURL=App.css.map */
