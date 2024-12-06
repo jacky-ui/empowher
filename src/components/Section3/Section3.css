@@ -24,15 +24,15 @@
   color: #FFFFFF;
   margin-top: 0;
   font-size: 3.6rem;
+  font-weight: 700;
   line-height: 60px;
   font-size: 2rem;
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 1025px) {
   .donateSection > div:first-child > h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 50px;
+    line-height: 55px;
+    font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 760px) {

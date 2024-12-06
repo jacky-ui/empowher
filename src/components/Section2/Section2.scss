@@ -27,9 +27,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 2rem;
-        width: 72%;
-        max-width: 64rem;
-
+        width: 100%;
+        @include desktop {
+            width: 53rem;
+        }
+        @include tablet {
+            justify-content: space-around;
+        }
         // & div:first-child, div:nth-child(2), div:nth-child(3) {
         //     & > p {
         //         & a {
@@ -46,6 +50,12 @@
             align-items: center;
             text-align: center;
             width: 20%;
+            @include tablet {
+                width: 40%;
+            }
+            // @include tablet {
+            //     width: 40%;
+            // }
             @include mobile {
                 width: 100%;
             }
@@ -54,6 +64,7 @@
             }
             & > div {
                 color: #3E1C66;
+                @include body-text;
                 font-weight: 800;
                 margin-top: 0.5rem;
             }
