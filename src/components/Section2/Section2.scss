@@ -14,7 +14,7 @@
     & > h2 {
         color: #3E1C66;
         @include secondary-header;
-        margin: 0;
+        margin: 0 0 0.8rem 0;
     }
     & > p {
         @include body-text;
