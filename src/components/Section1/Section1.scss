@@ -63,7 +63,7 @@
     }
     &__heading {
         @include secondary-header;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         color: #FFFFFF;
         margin-top: 0;
         // background: -webkit-linear-gradient(#AC00F4, #1A0826);
@@ -80,7 +80,7 @@
         @include body-text;
         color: #FFFFFF;
         @include tablet {
-            width: 72%;
+            width: 85%;
         }
         @include mobile {
             width: 100%;

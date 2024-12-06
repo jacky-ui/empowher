@@ -73,17 +73,17 @@
   border: 1px solid #FFFFFF;
 }
 .supportSection__heading {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 1rem;
+  font-size: 3.6rem;
+  line-height: 60px;
+  margin-bottom: 1.5rem;
   color: #FFFFFF;
   margin-top: 0;
 }
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 1025px) {
   .supportSection__heading {
-    font-size: 3.5rem;
-    line-height: 60px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 50px;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 761px) {
@@ -110,7 +110,7 @@
 }
 @media screen and (max-width: 1024px) and (min-width: 761px) {
   .supportSection__text {
-    width: 72%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 760px) {

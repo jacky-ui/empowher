@@ -16,12 +16,13 @@
     }
 }
 @mixin secondary-header {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 50px;
-    @include mobile {
-        font-size: 3.5rem;
-        line-height: 60px;
+    font-size: 3.6rem;
+    line-height: 60px;
+    @include desktop {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 50px;
+
     }
 }
 @mixin buttons {
