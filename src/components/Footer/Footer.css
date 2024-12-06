@@ -64,6 +64,12 @@
   font-size: 1rem;
   line-height: 18px;
 }
+@media screen and (max-width: 760px) {
+  .footer__aboutus > p {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+}
 .footer__location {
   font-family: "Afacad Flux", sans-serif;
   font-size: 1rem;

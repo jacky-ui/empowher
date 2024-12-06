@@ -18,12 +18,24 @@
   line-height: 50px;
   margin: 0 0 0.8rem 0;
 }
+@media screen and (max-width: 760px) {
+  .helpSection > h2 {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+}
 .helpSection > p {
   font-weight: 500;
   font-size: 1rem;
   line-height: 18px;
   color: #3E1C66;
   margin: 0rem;
+}
+@media screen and (max-width: 760px) {
+  .helpSection > p {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
 }
 .helpSection__icons {
   display: flex;
@@ -60,6 +72,12 @@
   font-weight: 500;
   font-size: 1rem;
   line-height: 18px;
+}
+@media screen and (max-width: 760px) {
+  .helpSection__icons > div > p {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
 }
 .helpSection__icons > div > p a {
   color: #3E1C66;

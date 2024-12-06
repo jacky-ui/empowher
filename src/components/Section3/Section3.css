@@ -31,6 +31,12 @@
 }
 @media screen and (max-width: 760px) {
   .donateSection > div:first-child > h2 {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .donateSection > div:first-child > h2 {
     line-height: 35px;
   }
 }

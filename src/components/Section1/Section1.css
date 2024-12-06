@@ -18,6 +18,11 @@
 .supportSection > div:first-child {
   width: 70%;
 }
+@media screen and (min-width: 1025px) {
+  .supportSection > div:first-child {
+    width: 53rem;
+  }
+}
 @media screen and (max-width: 760px) {
   .supportSection > div:first-child {
     width: 100%;
@@ -25,30 +30,37 @@
 }
 .supportSection > div:first-child > article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  padding: 3rem 0rem;
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem 0rem;
+  width: 100%;
 }
-@media screen and (max-width: 1024px) and (min-width: 761px) {
+@media screen and (min-width: 1025px) {
   .supportSection > div:first-child > article {
-    flex-wrap: wrap;
-    padding: 2rem 0rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0rem;
   }
 }
-@media screen and (max-width: 760px) {
-  .supportSection > div:first-child > article {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0rem;
-    width: 100%;
+.supportSection > div:first-child > article > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .supportSection > div:first-child > article br {
+    display: none;
   }
 }
 .supportSection > div:first-child > article img {
-  width: 22rem;
+  width: 24rem;
 }
 @media screen and (max-width: 760px) {
   .supportSection > div:first-child > article img {
-    width: 16rem;
+    width: 100%;
   }
 }
 .supportSection--line {
@@ -58,10 +70,20 @@
   font-size: 3rem;
   font-weight: 700;
   line-height: 50px;
-  width: 80%;
   margin-bottom: 1rem;
   color: #FFFFFF;
   margin-top: 0;
+}
+@media screen and (max-width: 760px) {
+  .supportSection__heading {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .supportSection__heading {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 760px) {
   .supportSection__heading {
@@ -72,8 +94,18 @@
   font-weight: 500;
   font-size: 1rem;
   line-height: 18px;
-  width: 80%;
   color: #FFFFFF;
+}
+@media screen and (max-width: 760px) {
+  .supportSection__text {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .supportSection__text {
+    width: 72%;
+  }
 }
 @media screen and (max-width: 760px) {
   .supportSection__text {
