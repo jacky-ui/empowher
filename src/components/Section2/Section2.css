@@ -25,16 +25,16 @@
   }
 }
 .helpSection > p {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 35px;
   color: #3E1C66;
   margin: 0rem;
 }
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 1025px) {
   .helpSection > p {
-    font-size: 1.5rem;
-    line-height: 35px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 18px;
   }
 }
 .helpSection__icons {
@@ -69,14 +69,14 @@
 .helpSection__icons > div > p {
   color: #3E1C66;
   margin-top: 0.5rem;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 35px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 1025px) {
   .helpSection__icons > div > p {
-    font-size: 1.5rem;
-    line-height: 35px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 18px;
   }
 }
 .helpSection__icons > div > p a {

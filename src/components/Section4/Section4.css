@@ -65,16 +65,16 @@
   }
 }
 .rippleSection__text {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 35px;
   width: 69%;
   color: #FFFFFF;
 }
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 1025px) {
   .rippleSection__text {
-    font-size: 1.5rem;
-    line-height: 35px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 18px;
   }
 }
 @media screen and (max-width: 760px) {

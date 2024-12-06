@@ -7,12 +7,12 @@
 }
 
 @mixin body-text {
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 18px;
-    @include mobile {
-        font-size: 1.5rem;
-        line-height: 35px;
+    font-size: 1.5rem;
+    line-height: 35px;
+    @include desktop {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 18px;
     }
 }
 @mixin secondary-header {

@@ -60,14 +60,14 @@
   margin-bottom: 0.5rem;
 }
 .footer__aboutus > p {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 18px;
+  font-size: 1.5rem;
+  line-height: 35px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 1025px) {
   .footer__aboutus > p {
-    font-size: 1.5rem;
-    line-height: 35px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 18px;
   }
 }
 .footer__location {
