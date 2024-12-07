@@ -24,3 +24,8 @@ br {
         display: none;
     }
 }
+
+.character-break {
+    hyphens: auto;
+    overflow-wrap: anywhere;
+}

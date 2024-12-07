@@ -74,9 +74,6 @@
     &__text {
         @include body-text;
         color: #FFFFFF;
-        @include tablet {
-            width: 85%;
-        }
         @include mobile {
             width: 100%;
         }

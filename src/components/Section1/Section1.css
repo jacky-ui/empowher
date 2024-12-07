@@ -88,8 +88,8 @@
   }
 }
 .supportSection__text {
-  font-size: 1.5rem;
-  line-height: 35px;
+  font-size: 1.6rem;
+  line-height: 40px;
   font-weight: 500;
   color: #FFFFFF;
 }
@@ -97,11 +97,6 @@
   .supportSection__text {
     font-size: 1rem;
     line-height: 18px;
-  }
-}
-@media screen and (max-width: 1024px) and (min-width: 761px) {
-  .supportSection__text {
-    width: 85%;
   }
 }
 @media screen and (max-width: 760px) {

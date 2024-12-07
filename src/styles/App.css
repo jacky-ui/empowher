@@ -19,4 +19,10 @@ h1, h2, h3, h4, h5 {
   br {
     display: none;
   }
+}
+
+.character-break {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  overflow-wrap: anywhere;
 }/*# sourceMappingURL=App.css.map */
