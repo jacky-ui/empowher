@@ -13,7 +13,9 @@
 }
 @media screen and (max-width: 760px) {
   .donateSection {
-    padding: 3rem 2.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
   }
 }
 .donateSection > div:first-child {
@@ -47,7 +49,9 @@
 }
 @media screen and (max-width: 760px) {
   .donateSection__links {
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 .donateSection__links a {
@@ -73,6 +77,6 @@
 }
 @media screen and (max-width: 760px) {
   .donateSection > div:last-child > img {
-    width: 69%;
+    width: 54%;
   }
 }/*# sourceMappingURL=Section3.css.map */
