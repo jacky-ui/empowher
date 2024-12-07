@@ -13,21 +13,34 @@
 }
 @media screen and (max-width: 760px) {
   .donateSection {
-    padding: 3rem 2.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
   }
 }
 .donateSection > div:first-child {
   position: relative;
   z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .donateSection > div:first-child {
+    display: block;
+    text-align: unset;
+    width: auto;
+  }
 }
 .donateSection > div:first-child > h2 {
   color: #FFFFFF;
   margin-top: 0;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 50px;
-  font-size: 2rem;
+  line-height: 55px;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
+  font-weight: 700;
 }
 @media screen and (max-width: 760px) {
   .donateSection > div:first-child > h2 {
@@ -38,10 +51,13 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 760px) {
   .donateSection__links {
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 .donateSection__links a {
@@ -67,6 +83,6 @@
 }
 @media screen and (max-width: 760px) {
   .donateSection > div:last-child > img {
-    width: 69%;
+    width: 54%;
   }
 }/*# sourceMappingURL=Section3.css.map */

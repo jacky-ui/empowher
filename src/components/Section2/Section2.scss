@@ -14,12 +14,15 @@
     & > h2 {
         color: #3E1C66;
         @include secondary-header;
-        margin: 0;
+        margin: 0 0 0.8rem 0;
     }
     & > p {
         @include body-text;
         color: #3E1C66;
         margin: 0rem;
+        @include mobile {
+            width: 77%;
+        }
     }
     &__icons {
         display: flex;
@@ -27,9 +30,16 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 2rem;
-        width: 72%;
-        max-width: 64rem;
-
+        width: 100%;
+        @include desktop {
+            width: 53rem;
+        }
+        @include tablet {
+            justify-content: space-around;
+        }
+        @include mobile {
+            margin-top: 3rem;
+        }
         // & div:first-child, div:nth-child(2), div:nth-child(3) {
         //     & > p {
         //         & a {
@@ -46,14 +56,24 @@
             align-items: center;
             text-align: center;
             width: 20%;
+            @include tablet {
+                width: 40%;
+            }
+            // @include tablet {
+            //     width: 40%;
+            // }
             @include mobile {
                 width: 100%;
             }
             & > img {
                 width: 3.5rem;
+                @include mobile {
+                    width: 5.5rem;
+                }
             }
             & > div {
                 color: #3E1C66;
+                @include body-text;
                 font-weight: 800;
                 margin-top: 0.5rem;
             }

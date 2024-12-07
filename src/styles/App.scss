@@ -1,3 +1,5 @@
+@use './partials/mixins' as *;
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -15,4 +17,15 @@ h1, h2, h3, h4, h5 {
     & > img:first-child {
         width: 100%;
     }
+}
+
+br {
+    @include mobile {
+        display: none;
+    }
+}
+
+.character-break {
+    hyphens: auto;
+    overflow-wrap: anywhere;
 }

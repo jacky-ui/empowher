@@ -7,38 +7,48 @@
     flex-direction: column;
     align-items: center;
     @include mobile {
-        padding: 2rem 2.5rem;
+        text-align: center;
+        padding: 3rem 1rem;
     }
 
     & > div:first-child {
-        width: 70%;
+        width: 53rem;
+        @include tablet {
+            width: 70%;
+        }
         @include mobile {
             width: 100%;
         }
         & > article {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
+            text-align: center;
             padding: 2rem 0rem;
-            @include tablet {
-                flex-wrap: wrap;
+            @include desktop {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: unset;
             }
             @include mobile {
-                flex-direction: column;
-                align-items: center;
-                padding-top: 0rem;
+                padding: 0rem;
+            }
+            & br {
+                @include tablet {
+                    display: none;
+                }
             }
             & img {
-                width: 23rem;
-                @include mobile {
-                    width: 16rem;
+                width: 100%;
+                @include desktop {
+                    width: 24rem;
                 }
             }
         }
     }
     &__heading {
         @include secondary-header;
-        width: 80%;
         margin-bottom: 1rem;
         margin-top: 0;
         color: #FFFFFF;
@@ -48,8 +58,12 @@
     }
     &__text {
         @include body-text;
-        width: 69%;
         color: #FFFFFF;
+        margin: 2rem 0rem;
+        @include desktop {
+            padding: inherit;
+            margin-bottom: 0;
+        }
         @include mobile {
             width: 100%;
         }

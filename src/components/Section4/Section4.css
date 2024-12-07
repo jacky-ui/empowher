@@ -7,11 +7,17 @@
 }
 @media screen and (max-width: 760px) {
   .rippleSection {
-    padding: 2rem 2.5rem;
+    text-align: center;
+    padding: 3rem 1rem;
   }
 }
 .rippleSection > div:first-child {
-  width: 70%;
+  width: 53rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .rippleSection > div:first-child {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 760px) {
   .rippleSection > div:first-child {
@@ -20,38 +26,50 @@
 }
 .rippleSection > div:first-child > article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 2rem 0rem;
 }
-@media screen and (max-width: 1024px) and (min-width: 761px) {
+@media screen and (min-width: 1025px) {
   .rippleSection > div:first-child > article {
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: unset;
   }
 }
 @media screen and (max-width: 760px) {
   .rippleSection > div:first-child > article {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0rem;
+    padding: 0rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .rippleSection > div:first-child > article br {
+    display: none;
   }
 }
 .rippleSection > div:first-child > article img {
-  width: 23rem;
+  width: 100%;
 }
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 1025px) {
   .rippleSection > div:first-child > article img {
-    width: 16rem;
+    width: 24rem;
   }
 }
 .rippleSection__heading {
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  line-height: 50px;
-  width: 80%;
+  line-height: 60px;
   margin-bottom: 1rem;
   margin-top: 0;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1025px) {
+  .rippleSection__heading {
+    line-height: 55px;
+    font-size: 3.5rem;
+  }
 }
 @media screen and (max-width: 760px) {
   .rippleSection__heading {
@@ -59,11 +77,23 @@
   }
 }
 .rippleSection__text {
+  font-size: 1.6rem;
+  line-height: 40px;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 18px;
-  width: 69%;
   color: #FFFFFF;
+  margin: 2rem 0rem;
+}
+@media screen and (min-width: 1025px) {
+  .rippleSection__text {
+    font-size: 1rem;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .rippleSection__text {
+    padding: inherit;
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 760px) {
   .rippleSection__text {

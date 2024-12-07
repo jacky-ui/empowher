@@ -13,17 +13,34 @@
 }
 .helpSection > h2 {
   color: #3E1C66;
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  line-height: 50px;
-  margin: 0;
+  line-height: 60px;
+  margin: 0 0 0.8rem 0;
+}
+@media screen and (min-width: 1025px) {
+  .helpSection > h2 {
+    line-height: 55px;
+    font-size: 3.5rem;
+  }
 }
 .helpSection > p {
+  font-size: 1.6rem;
+  line-height: 40px;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 18px;
   color: #3E1C66;
   margin: 0rem;
+}
+@media screen and (min-width: 1025px) {
+  .helpSection > p {
+    font-size: 1rem;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .helpSection > p {
+    width: 77%;
+  }
 }
 .helpSection__icons {
   display: flex;
@@ -31,8 +48,22 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2rem;
-  width: 72%;
-  max-width: 64rem;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .helpSection__icons {
+    width: 53rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .helpSection__icons {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 760px) {
+  .helpSection__icons {
+    margin-top: 3rem;
+  }
 }
 .helpSection__icons > div {
   display: flex;
@@ -40,6 +71,11 @@
   align-items: center;
   text-align: center;
   width: 20%;
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .helpSection__icons > div {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 760px) {
   .helpSection__icons > div {
@@ -49,17 +85,37 @@
 .helpSection__icons > div > img {
   width: 3.5rem;
 }
+@media screen and (max-width: 760px) {
+  .helpSection__icons > div > img {
+    width: 5.5rem;
+  }
+}
 .helpSection__icons > div > div {
   color: #3E1C66;
+  font-size: 1.6rem;
+  line-height: 40px;
+  font-weight: 500;
   font-weight: 800;
   margin-top: 0.5rem;
+}
+@media screen and (min-width: 1025px) {
+  .helpSection__icons > div > div {
+    font-size: 1rem;
+    line-height: 18px;
+  }
 }
 .helpSection__icons > div > p {
   color: #3E1C66;
   margin-top: 0.5rem;
+  font-size: 1.6rem;
+  line-height: 40px;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 18px;
+}
+@media screen and (min-width: 1025px) {
+  .helpSection__icons > div > p {
+    font-size: 1rem;
+    line-height: 18px;
+  }
 }
 .helpSection__icons > div > p a {
   color: #3E1C66;

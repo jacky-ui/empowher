@@ -7,14 +7,31 @@
 }
 
 @mixin body-text {
+    font-size: 1.6rem;
+    line-height: 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 18px;
+    @include desktop {
+        font-size: 1rem;
+        line-height: 18px;
+    }
 }
 @mixin secondary-header {
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 60px;
+    @include desktop {
+        line-height: 55px;
+        font-size: 3.5rem;
+
+    }
+}
+@mixin footer-header {
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: "Afacad Flux", sans-serif;
+    @include mobile {
+        font-size: 1.8rem;
+    }
 }
 @mixin buttons {
     display: block;
