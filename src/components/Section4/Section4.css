@@ -35,6 +35,7 @@
   .rippleSection > div:first-child > article {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     text-align: unset;
   }
 }
@@ -91,6 +92,7 @@
 @media screen and (min-width: 1025px) {
   .rippleSection__text {
     padding: inherit;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 760px) {
