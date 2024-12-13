@@ -1,0 +1,33 @@
+.donorLogos {
+  background-color: #FFFFFF;
+  padding: 2rem 3rem;
+  width: 100%;
+}
+
+.donorLogos__lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* Spacing between logos */
+  width: 100%;
+}
+
+.donorLogos__lists li {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* Uniform container height */
+  width: 150px; /* Uniform container width */
+  border: 1px solid transparent; /* Optional for debugging alignment issues */
+}
+
+.donorLogos__lists li img {
+  max-width: 80%; /* Reduce width slightly for better proportional scaling */
+  max-height: 80%; /* Ensure logos fit better in the container */
+  -o-object-fit: contain;
+     object-fit: contain; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align logos vertically within their container */
+}/*# sourceMappingURL=Donors.css.map */

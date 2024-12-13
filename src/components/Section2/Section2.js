@@ -9,7 +9,7 @@ function Section2() {
     return(
         <section className='helpSection'>
             <h2>Here's how you can help</h2>
-            <p>Help us in inspiring and equiping young minority women and girls to become</p>
+            <p>Help us in inspiring and equiping young minority women and girls</p>
             <article className='helpSection__icons'>
                 <StepIcons src={donation} alt='' header='Make a donation' 
                 text={

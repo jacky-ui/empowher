@@ -1,12 +1,12 @@
 import Header from './components/Header/Header';
 import Image from './components/Image/Image';
-import donor from './assets/images/donors.png';
 import Section1 from './components/Section1/Section1';
 import Section2 from './components/Section2/Section2';
 import Section3 from './components/Section3/Section3';
-import './styles/App.css';
 import Section4 from './components/Section4/Section4';
 import Footer from './components/Footer/Footer';
+import donor from './assets/images/donors.png';
+import './styles/App.css';
 
 function App () {
   return(
