@@ -5,6 +5,7 @@ import Section2 from './components/Section2/Section2';
 import Section3 from './components/Section3/Section3';
 import Section4 from './components/Section4/Section4';
 import Footer from './components/Footer/Footer';
+import Modal from './components/Modal/Modal';
 import donor from './assets/images/donors.png';
 import './styles/App.css';
 
@@ -20,6 +21,7 @@ function App () {
         <Section4 />
         <Footer />
       </main>
+      <Modal />
     </>
   );
 };
