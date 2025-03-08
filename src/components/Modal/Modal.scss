@@ -1,7 +1,45 @@
-.popupEvent {
-    width: 10rem;
+@use '../../styles/partials/mixins' as *;
 
+.popupEvent {
+    position: fixed;
+    z-index: 2;
+    padding: 0;
+    top: 25%;
+    border-radius: 10px;
+    width: calc(35rem + 100vw - 1024px);
+    max-width: 40rem;
+
+    & > div {
+        display: flex;
+        justify-content: space-evenly;
+        & > div:first-child {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #FEFEFE;
+            text-align: center;
+            & a {
+                text-decoration: none;
+                @include buttons;
+                background-color: #FF40FF;
+            }
+        }
+    }
     & img {
-        width: 5rem;
+        width: 50%;
+    }
+    &--close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        background: unset;
+        border: 2px solid #fff;
+        border-radius: 35px;
+        font-size: 18px;
     }
 }

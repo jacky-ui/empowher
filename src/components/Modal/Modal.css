@@ -1,6 +1,52 @@
 .popupEvent {
-  width: 10rem;
+  position: fixed;
+  z-index: 2;
+  padding: 0;
+  top: 25%;
+  border-radius: 10px;
+  width: calc(35rem + 100vw - 1024px);
+  max-width: 40rem;
+}
+.popupEvent > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.popupEvent > div > div:first-child {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FEFEFE;
+  text-align: center;
+}
+.popupEvent > div > div:first-child a {
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 12rem;
+  background-color: #FF40FF;
+}
+.popupEvent > div > div:first-child a:hover {
+  cursor: pointer;
 }
 .popupEvent img {
-  width: 5rem;
+  width: 50%;
+}
+.popupEvent--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  background: unset;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  font-size: 18px;
 }/*# sourceMappingURL=Modal.css.map */
