@@ -4,7 +4,7 @@
   padding: 0;
   top: 25%;
   border-radius: 10px;
-  width: calc(35rem + 100vw - 1024px);
+  border: unset;
   max-width: 40rem;
 }
 .popupEvent > div {

@@ -19,11 +19,11 @@ export function useModal(autoOpenDelay = null) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  const handleBackdropClick = (e) => {
-    if (modalRef.current && e.target === modalRef.current) {
-      setIsOpen(false);
-    }
-  };
+  // const handleClickClose = (e) => {
+  //   if (modalRef.current || e.target === modalRef.current) {
+  //     setIsOpen(false);
+  //   }
+  // };
 
-  return { isOpen, setIsOpen, modalRef, handleBackdropClick };
+  return { isOpen, setIsOpen, modalRef };
 }

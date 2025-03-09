@@ -7,11 +7,14 @@ import Section4 from './components/Section4/Section4';
 import Footer from './components/Footer/Footer';
 import Modal from './components/Modal/Modal';
 import donor from './assets/images/donors.png';
+import { useModal } from './util/modalUtils';
 import './styles/App.css';
 
 function App () {
+  const { isOpen, setIsOpen, modalRef } = useModal(3000);
   return(
     <>
+      <div className={`${isOpen ? "overlay" : "overlay--hidden"}`}></div>
       <Header />
       <main className='main'>
         <Image src={donor} alt='Our donors include: TD, Borden Ladner Gervais, datacamp, CIBC, IPSEN'/>
@@ -21,7 +24,11 @@ function App () {
         <Section4 />
         <Footer />
       </main>
-      <Modal />
+      <Modal 
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        modalRef={modalRef}
+      />
     </>
   );
 };

@@ -1,9 +1,10 @@
 import './Modal.scss';
 import popupImage from '../../assets/images/popup-image.png';
 
-function Modal() {
+function Modal({ isOpen, setIsOpen, modalRef }) {
+
     return(
-        <dialog className='popupEvent'>
+        <dialog ref={modalRef} open={isOpen}  className='popupEvent'>
             <div>
                 <div>
                     <p>Join us for our 25 to BuildHER event</p>
@@ -11,7 +12,7 @@ function Modal() {
                 </div>
                 <img src={popupImage} alt=''/>
             </div>
-            <button className='popupEvent--close'>X</button>
+            <button onClick={() => setIsOpen(false)} className='popupEvent--close'>X</button>
         </dialog>
     )
 };
