@@ -2,14 +2,31 @@
   position: fixed;
   z-index: 2;
   padding: 0;
-  top: 25%;
-  border-radius: 10px;
   border: unset;
-  max-width: 40rem;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: scroll;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 760px) {
+  .popupEvent {
+    max-height: unset;
+    width: 90%;
+  }
 }
 .popupEvent > div {
   display: flex;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 760px) {
+  .popupEvent > div {
+    flex-direction: column-reverse;
+    height: 90vh;
+  }
 }
 .popupEvent > div > div:first-child {
   width: 50%;
@@ -19,6 +36,35 @@
   justify-content: center;
   background-color: #FEFEFE;
   text-align: center;
+}
+@media screen and (max-width: 760px) {
+  .popupEvent > div > div:first-child {
+    width: 100%;
+    height: 50%;
+  }
+}
+.popupEvent > div > div:first-child p {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+@media screen and (min-width: 1025px) {
+  .popupEvent > div > div:first-child p {
+    line-height: 55px;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .popupEvent > div > div:first-child p {
+    font-size: 2rem;
+    line-height: unset;
+  }
+}
+@media screen and (max-width: 760px) {
+  .popupEvent > div > div:first-child p {
+    font-size: 1rem;
+    line-height: unset;
+  }
 }
 .popupEvent > div > div:first-child a {
   text-decoration: none;
@@ -37,6 +83,12 @@
 }
 .popupEvent img {
   width: 50%;
+}
+@media screen and (max-width: 760px) {
+  .popupEvent img {
+    width: 100%;
+    height: 50%;
+  }
 }
 .popupEvent--close {
   position: absolute;
