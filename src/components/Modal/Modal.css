@@ -1,0 +1,104 @@
+.popupEvent {
+  position: fixed;
+  z-index: 2;
+  padding: 0;
+  border: unset;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: scroll;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 760px) {
+  .popupEvent {
+    max-height: unset;
+    width: 90%;
+  }
+}
+.popupEvent > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 760px) {
+  .popupEvent > div {
+    flex-direction: column-reverse;
+    height: 90vh;
+  }
+}
+.popupEvent > div > div:first-child {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FEFEFE;
+  text-align: center;
+}
+@media screen and (max-width: 760px) {
+  .popupEvent > div > div:first-child {
+    width: 100%;
+    height: 50%;
+  }
+}
+.popupEvent > div > div:first-child p {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+@media screen and (min-width: 1025px) {
+  .popupEvent > div > div:first-child p {
+    line-height: 55px;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 761px) {
+  .popupEvent > div > div:first-child p {
+    font-size: 2rem;
+    line-height: unset;
+  }
+}
+@media screen and (max-width: 760px) {
+  .popupEvent > div > div:first-child p {
+    font-size: 1rem;
+    line-height: unset;
+  }
+}
+.popupEvent > div > div:first-child a {
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 12rem;
+  background-color: #FF40FF;
+}
+.popupEvent > div > div:first-child a:hover {
+  cursor: pointer;
+}
+.popupEvent img {
+  width: 50%;
+}
+@media screen and (max-width: 760px) {
+  .popupEvent img {
+    width: 100%;
+    height: 50%;
+  }
+}
+.popupEvent--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  background: unset;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  font-size: 18px;
+}/*# sourceMappingURL=Modal.css.map */
