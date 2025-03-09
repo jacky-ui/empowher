@@ -1,10 +1,7 @@
 import './Modal.scss';
 import popupImage from '../../assets/images/popup-image.png';
-import { useState } from 'react';
-
 
 function Modal() {
-    const [isModalEnabled, setIsModalEnabled] = useState(false);
     return(
         <dialog className='popupEvent'>
             <div>
